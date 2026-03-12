@@ -1,77 +1,35 @@
-    @keyframes animacionTamanio {
-        25% {
-            font-size: 25px;
-            color: white
-        }
-        40% {
-            font-size: 50px;
-            color: rgb(207, 204, 194)
-        }
-    }
-    
-    h2 {
-        animation-name: animacionTamanio;
-        animation-direction: alternate;
-        animation-duration: 3s;
-        animation-iteration-count: inherit;
-        animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        background-color: transparent;
-        border: 10px;
-        border-radius: 12px;
-    }
-    
-    nav {
-        display: flex;
-        gap: 0.5rem;
-    }
-    
-    a {
-        flex: 1;
-        background-color: #333;
-        color: #fff;
-        border: 1px solid;
-        padding: 0.5rem;
-        text-align: center;
-        text-decoration: none;
-        transition: all 0.5s ease-out;
-    }
-    
-    a:hover,
-    a:focus {
-        background-color: rgb(90, 88, 88);
-        color: #333;
-    }
-    
-    .ball {
-        border-radius: 25px;
-        width: 50px;
-        height: 50px;
-        background: rgb(211, 214, 212);
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: transform 1s;
-    }
-    
-    p {
-        animation-duration: 3s;
-        animation-name: slidein;
-    }
-    
-    @keyframes slidein {
-        from {
-            margin-left: 100%;
-            width: 300%;
-        }
-        to {
-            margin-left: 0%;
-            width: 100%;
-        }
-    }
-    
-    li {
-        margin-bottom: .5rem;
-        margin-left: auto;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        margin-right: 1px;
-    }
+/* Sample CSS */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+/* Additional CSS rules with corrected semicolons */
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
